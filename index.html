@@ -7,20 +7,20 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f0f0f;
-    --surface: #161616;
-    --border: #2a2a2a;
-    --text: #e8e8e8;
-    --muted: #555;
-    --free: #16f26e;
-    --free-bg: rgba(22,242,110,0.13);
-    --free-border: rgba(22,242,110,0.45);
-    --busy: #ff3b3b;
-    --busy-bg: rgba(255,59,59,0.13);
-    --busy-border: rgba(255,59,59,0.45);
-    --fault: #ffb300;
-    --fault-bg: rgba(255,179,0,0.13);
-    --fault-border: rgba(255,179,0,0.45);
+    --bg: #f4f4f2;
+    --surface: #ffffff;
+    --border: #ddddd8;
+    --text: #111111;
+    --muted: #888880;
+    --free: #0a8f3c;
+    --free-bg: rgba(10,143,60,0.08);
+    --free-border: rgba(10,143,60,0.35);
+    --busy: #cc1f1f;
+    --busy-bg: rgba(204,31,31,0.07);
+    --busy-border: rgba(204,31,31,0.35);
+    --fault: #b36a00;
+    --fault-bg: rgba(179,106,0,0.08);
+    --fault-border: rgba(179,106,0,0.35);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
@@ -141,9 +141,9 @@
   .orient-slot {
     width: 32px;
     height: 20px;
-    border: 1px solid #3a3a3a;
+    border: 1px solid var(--border);
     border-radius: 3px;
-    background: #1e1e1e;
+    background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,9 +249,9 @@
   .action-btn:active { background: rgba(255,255,255,0.05); }
 
   .action-btn.active          { color: var(--text); font-weight: 500; }
-  .action-btn.active.set-free  { color: var(--free);  background: rgba(22,242,110,0.12); }
-  .action-btn.active.set-busy  { color: var(--busy);  background: rgba(255,59,59,0.12); }
-  .action-btn.active.set-fault { color: var(--fault); background: rgba(255,179,0,0.12); }
+  .action-btn.active.set-free  { color: var(--free);  background: rgba(10,143,60,0.10); }
+  .action-btn.active.set-busy  { color: var(--busy);  background: rgba(204,31,31,0.10); }
+  .action-btn.active.set-fault { color: var(--fault); background: rgba(179,106,0,0.10); }
 
   .action-btn.saving { opacity: 0.4; pointer-events: none; }
 
@@ -286,7 +286,7 @@
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%) translateY(70px);
-    background: #1c1c1c;
+    background: #ffffff;
     border: 1px solid var(--border);
     color: var(--text);
     font-family: 'DM Mono', monospace;
